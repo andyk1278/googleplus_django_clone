@@ -4,7 +4,7 @@ from django.db.models.signals import post_save, pre_delete
 from django.dispatch import receiver
 
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, primary_key=True, related_name='profile')
+    user = models.OneToOneField(User, primary_key=True, related_n`ame='profile')
 
     tagline = models.CharField(max_length=140, blank=True, null=True)
 
